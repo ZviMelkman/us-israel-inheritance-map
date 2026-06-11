@@ -12,6 +12,13 @@
   <meta property="og:title" content="{{ title or site.name }}">
   <meta property="og:description" content="{{ description or site.tagline }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/img/favicon-180.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +36,14 @@
 
   <header class="site-head">
     <div class="frame">
-      <a class="wordmark" href="/">{{ site.wordmark }}</a>
+      <a class="wordmark" href="/" aria-label="{{ site.name }} home">
+        <svg class="wordmark-mark" viewBox="0 0 100 100" width="24" height="24" aria-hidden="true" focusable="false">
+          <path d="M26 62 Q50 24 74 62" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+          <circle cx="26" cy="62" r="8.5" fill="currentColor"/>
+          <circle cx="74" cy="62" r="8.5" fill="currentColor"/>
+        </svg>
+        <span>{{ site.wordmark }}</span>
+      </a>
       <nav class="nav" aria-label="Primary">
         {%- for item in site.nav %}
         <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
