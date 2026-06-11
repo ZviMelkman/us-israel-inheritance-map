@@ -1,0 +1,39 @@
+---
+layout: base.njk
+---
+<article>
+  <div class="article-head">
+    <div class="frame measure">
+      {% if query %}<p class="eyebrow">Maps the question: {{ query }}</p>{% endif %}
+      <h1>{{ title }}</h1>
+      {% if sub %}<p class="sub">{{ sub }}</p>{% endif %}
+    </div>
+  </div>
+
+  <div class="section band-a">
+    <div class="frame">
+      <div class="prose">
+        <p class="orient-note">This is orientation, not legal or tax advice. It maps what exists and the questions to take to a licensed professional. It does not tell you what to do about your own estate or taxes.</p>
+
+        {{ content | safe }}
+      </div>
+
+      <div class="measure">
+        {% set captureClass = "" %}
+        {% include "capture.njk" %}
+      </div>
+
+      {% if sources %}
+      <div class="prose sources">
+        <h2>Sources</h2>
+        <p class="checked">All figures checked against primary sources on {{ checkedOn or site.factsCheckedOn }}. Re-confirm time-sensitive items before relying on them.</p>
+        <ol>
+          {%- for s in sources %}
+          <li>{{ s | safe }}</li>
+          {%- endfor %}
+        </ol>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</article>

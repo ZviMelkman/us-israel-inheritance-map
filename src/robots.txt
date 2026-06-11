@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://usisraelinheritancemap.com/sitemap.xml

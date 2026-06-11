@@ -1,0 +1,25 @@
+{
+  "name": "US-Israel Inheritance",
+  "wordmark": "US-ISRAEL INHERITANCE",
+  "domain": "USIsraelInheritanceMap.com",
+  "url": "https://usisraelinheritancemap.com",
+  "tagline": "A plain-English map of what you are facing, in what order, on what clock, and who to call.",
+  "footerLine": "USIsraelInheritanceMap.com  .  Orientation, not legal or tax advice.",
+  "disclaimer": "This is orientation. It is not legal or tax advice, it does not create any professional relationship, and it should not be relied on for decisions about your specific estate or taxes. Rules and figures change. Confirm anything time-sensitive with a licensed professional before acting.",
+  "factsCheckedOn": "June 10, 2026",
+
+  "_MAILERLITE_INSTRUCTIONS": "Fill the two values below with your real MailerLite account/form values, then rebuild. accountId is your MailerLite account number; formId is the embedded form id. If you would rather paste your existing working form, replace the contents of src/_includes/capture.njk instead and ignore these.",
+  "mailerlite": {
+    "accountId": "REPLACE_WITH_MAILERLITE_ACCOUNT_ID",
+    "formId": "REPLACE_WITH_MAILERLITE_FORM_ID",
+    "groupId": "REPLACE_WITH_SUBSCRIBER_GROUP_ID"
+  },
+
+  "nav": [
+    { "title": "Start here", "url": "/" },
+    { "title": "How this works", "url": "/how-this-works/" },
+    { "title": "Comparison", "url": "/reference/us-vs-israel-comparison/" },
+    { "title": "Term dictionary", "url": "/reference/dictionary/" },
+    { "title": "Document checklist", "url": "/reference/document-checklist/" }
+  ]
+}

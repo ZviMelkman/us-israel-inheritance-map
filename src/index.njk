@@ -1,0 +1,117 @@
+---
+layout: base.njk
+title: Inheriting Across the US-Israel Border
+description: "A plain-English map of what heirs face across the US-Israel border: two legal systems, two tax systems, frozen banks, and a hard nine-month US clock. Orientation, not advice."
+---
+<section class="hero">
+  <div class="frame">
+    <p class="eyebrow">A map, not a manual</p>
+    <h1>Inheriting across the US-Israel border</h1>
+    <p class="lede">{{ site.tagline }}</p>
+    <p class="promise">When someone with ties to both countries dies, the people who inherit meet two legal systems, two tax systems, and banks that freeze everything. No single professional owns the whole problem. This site maps the landscape so you can walk into the right conversations already knowing the shape of what is ahead.</p>
+    <div class="route" aria-hidden="true">
+      <span class="node full"></span><span class="seg"></span>
+      <span class="node"></span><span class="seg"></span>
+      <span class="node"></span><span class="seg"></span>
+      <span class="node"></span>
+    </div>
+    <p style="margin-top:1.6rem"><a href="#get-the-guide" style="color:#fff;font-family:var(--mono);font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase">Get the 8-page guide &rarr;</a></p>
+  </div>
+</section>
+
+<section class="section band-a">
+  <div class="frame measure">
+    <p class="eyebrow">Why this is genuinely hard</p>
+    <h2>Three areas, two countries, one missing treaty</h2>
+    <p>A cross-border estate has to clear three areas in both countries at once: the legal process, the tax exposure, and the banks. The two countries do not coordinate the way you might expect.</p>
+    <p>Sitting over all of it is one structural fact: there is no estate tax treaty between the United States and Israel. The only treaty in force between them covers income tax, signed in 1975. That gap is why coordination across the two systems falls to you and the professionals you choose, and why getting the sequence right matters.</p>
+    <p><a href="/reference/us-vs-israel-comparison/">See the side-by-side comparison of the two systems &rarr;</a></p>
+  </div>
+</section>
+
+<section class="section band-b">
+  <div class="frame">
+    <div class="measure">
+      <p class="eyebrow">Locate yourself</p>
+      <h2>Six questions decide which rules apply</h2>
+      <p class="lead">Every professional you speak to will ask some version of these first, because the answers decide which rules apply. Answering them now will tell you roughly where you sit and make your first meetings far shorter.</p>
+    </div>
+    <ol class="locator">
+      <li><b>What was the deceased's status?</b> US citizen, US green-card holder, Israeli resident, dual, or other.</li>
+      <li><b>Where was the deceased domiciled?</b> Domicile, the place they treated as their permanent home, is the single biggest driver of US estate tax, and it is not the same as where they died.</li>
+      <li><b>Who inherits, and what is each heir's status?</b> Is any heir a US person? Is any heir an Israeli resident? This decides who has reporting duties.</li>
+      <li><b>Where do the assets sit?</b> This is called situs. A US bank account, US real estate, or US company shares are US-situs; an Israeli apartment or Israeli account is Israeli-situs.</li>
+      <li><b>What types of assets are there?</b> Cash, real estate, retirement accounts, business interests, securities. Each is treated differently.</li>
+      <li><b>Is there a will, and what is the estate roughly worth?</b> A will, no will, or a foreign will each route differently, and rough value decides which thresholds you cross.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section band-a">
+  <div class="frame measure">
+    <p class="eyebrow">The clock</p>
+    <h2>A slow Israeli process runs alongside a fast US deadline</h2>
+    <p>A cross-border estate commonly takes twelve to eighteen months or more to settle, because each court order, translation, and clearance depends on the one before it. The danger is that the slowest, most paperwork-heavy track in Israel runs alongside a hard, early deadline in the United States.</p>
+    <div class="callout">
+      <p class="label">The deadline buried early</p>
+      <p>If a US estate tax return is required, it is generally due nine months after the date of death. A six-month extension of time to file can be requested, but it does not extend the time to pay. This clock starts on the day of death, long before the Israeli side is usually untangled.</p>
+      <p>Whether a return is required in your case is a question for a licensed professional, and worth asking early rather than late.</p>
+    </div>
+  </div>
+</section>
+
+<div class="frame">
+  <div class="measure" id="get-the-guide">
+    {% set captureClass = "full" %}
+    {% set captureHeading = "Get the full map as an 8-page guide" %}
+    {% set captureBody = "Enter your email and we will send you the guide: the whole landscape, the six questions to locate yourself, the clock, and the questions to bring to each professional. Orientation, not advice." %}
+    {% include "capture.njk" %}
+  </div>
+</div>
+
+{% if collections.reactive.length %}
+<section class="section band-b">
+  <div class="frame">
+    <div class="measure">
+      <p class="eyebrow">Start with your question</p>
+      <h2>Someone has died. Where do you begin?</h2>
+      <p class="lead">Each piece below maps one common situation in plain English, names the forms and orders involved, and tells you which professional to ask.</p>
+    </div>
+    <div class="cards">
+      {%- for post in collections.reactive %}
+      <a class="card" href="{{ post.url }}">
+        {% if post.data.query %}<span class="q">{{ post.data.query }}</span>{% endif %}
+        <span class="t">{{ post.data.title }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section band-a">
+  <div class="frame">
+    <div class="measure">
+      <p class="eyebrow">Reference</p>
+      <h2>Three tools to keep open</h2>
+    </div>
+    <div class="cards">
+      <a class="card" href="/reference/us-vs-israel-comparison/">
+        <span class="q">US vs Israel</span>
+        <span class="t">The two systems side by side: legal, tax, banking</span>
+      </a>
+      <a class="card" href="/reference/dictionary/">
+        <span class="q">Plain-English terms</span>
+        <span class="t">A short bilingual decoder of the words that confuse people first</span>
+      </a>
+      <a class="card" href="/reference/document-checklist/">
+        <span class="q">By institution</span>
+        <span class="t">The cross-border estate document checklist</span>
+      </a>
+      <a class="card" href="/how-this-works/">
+        <span class="q">How this works</span>
+        <span class="t">What we do, what we never do, and how the introductions work</span>
+      </a>
+    </div>
+  </div>
+</section>

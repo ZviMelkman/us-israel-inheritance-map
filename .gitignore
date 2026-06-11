@@ -1,0 +1,6 @@
+# build output (Cloudflare builds this itself)
+_site/
+# dependencies (Cloudflare installs these itself)
+node_modules/
+# os cruft
+.DS_Store

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+  <meta name="description" content="{{ description or site.tagline }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:description" content="{{ description or site.tagline }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '2279891');
+  </script>
+  <!-- End MailerLite Universal -->
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-head">
+    <div class="frame">
+      <a class="wordmark" href="/">{{ site.wordmark }}</a>
+      <nav class="nav" aria-label="Primary">
+        {%- for item in site.nav %}
+        <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        {%- endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-foot">
+    <div class="frame">
+      <div>
+        <p class="foot-line">{{ site.footerLine }}</p>
+        <p class="foot-disc">{{ site.disclaimer }}</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        {%- for item in site.nav %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {%- endfor %}
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
