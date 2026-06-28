@@ -271,3 +271,4 @@ tbody tr:nth-child(even) td { background: rgba(180, 196, 224, 0.04); }
 .capture-embed .ml-embedded { max-width: 36rem; margin-inline: auto; }
 .capture-embed .ml-form,
 .capture-embed form { max-width: 36rem; margin-inline: auto; }
+.article-head .frame.measure { max-width: var(--wide); }
