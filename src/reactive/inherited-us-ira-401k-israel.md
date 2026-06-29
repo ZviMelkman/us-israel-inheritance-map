@@ -1,3 +1,4 @@
+
 ---
 layout: article.njk
 title: "Inheriting a US IRA or 401(k) as an Israeli Resident: How the Tax Actually Works"
